@@ -71,7 +71,7 @@ function App() {
       title = formData[0].value;
       XCoord = formData[1].value;
       YCoord = formData[2].value;
-      fontSize = formData[3].value + "px";
+      fontSize = formData[3].value;
       fontWeight = formData[4].value;
       if (!title || title.trim() === "") {
         title = selectedElement.title;
@@ -96,7 +96,7 @@ function App() {
       if (isNaN(fontWeight) || !fontWeight) {
         fontWeight = selectedElement.fontWeight;
       }
-      if(fontSize !== "16px") {
+      if(fontSize !== selectedElement.fontSize) {
         fontSize = fontSize + "px";
       }      
       type = selectedElement.type;
