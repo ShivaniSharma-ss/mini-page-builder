@@ -71,7 +71,7 @@ function App() {
       title = formData[0].value;
       XCoord = formData[1].value;
       YCoord = formData[2].value;
-      fontSize = formData[3].value;
+      fontSize = formData[3].value + "px";
       fontWeight = formData[4].value;
       if (!title || title.trim() === "") {
         title = selectedElement.title;
