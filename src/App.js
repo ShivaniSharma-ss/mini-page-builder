@@ -96,12 +96,15 @@ function App() {
       if (isNaN(fontWeight) || !fontWeight) {
         fontWeight = selectedElement.fontWeight;
       }
+      if(fontSize !== "16px") {
+        fontSize = fontSize + "px";
+      }      
       type = selectedElement.type;
     } else {
       title = formData[0].value;
       XCoord = formData[1].value;
       YCoord = formData[2].value;
-      fontSize = formData[3].value + "px";
+      fontSize = formData[3].value;
       fontWeight = formData[4].value;
       type = config.type;
       droppedXCoord = config.x;
@@ -129,6 +132,9 @@ function App() {
       }
       if (isNaN(fontWeight) || !fontWeight) {
         fontWeight = "300";
+      }
+      if(fontSize !== "16px") {
+        fontSize = fontSize + "px";
       }
     }
 
