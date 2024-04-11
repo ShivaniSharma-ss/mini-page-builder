@@ -1,6 +1,6 @@
 # Instructions on how to run the code
 
-Download the zip file from the following repository () or clone the repository in your local system with the help of the command: git clone {}
+Download the zip file or clone the repository in your local system with the help of the command: git clone
 
 In the project directory, you should run:
 
